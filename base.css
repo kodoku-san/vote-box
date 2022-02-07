@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #1f1d2b;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    line-height: 1.6rem;
+	box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+input.red {
+    accent-color: red;
+}
+
+input.yellow {
+    accent-color: yellow;
+}
+
+input.green {
+    accent-color: green;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+    margin-bottom: 20px;
+}
+
+.vote-head {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vote-body {
+    margin-bottom: 20px;
+}
+
+.result-body {
+    margin-bottom: 32px;
+}
+
+.vote-body--group {
+    margin-bottom: 8px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.vote-body--group input {
+    cursor: pointer;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.vote-body--group label {
+    cursor: pointer;
+}
+
+.vote-info {
+    display: flex;
+    align-items: center;
+}
+
+.vote-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vote-img {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.vote-img img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.vote-img img:not(.vote-img img:first-child){
+    margin-left: -8px;
+}
+
+.vote-info span {
+    font-size: 14px;
+    color: #4e4a4a;
+    position: relative;
+    display: inline-block;
+}
+
+.vote-info span:first-of-type {
+    padding-right: 16px;
+}
+
+.vote-info span:first-of-type::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #4e4a4ac0;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.button {
+    border: none;
+    outline: none;
+    padding: 3px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #7892e6;
+    color: #fff;
+    font-size: 14px;
+    min-width: 50px;
+    transition: 0.16s linear;
+}
+
+.button:hover {
+    filter: brightness(1.04);
+}
+
+.result-body--group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.result-body--percent {
+    margin: 0 12px;
+}
+
+.result-body--item {
+    position: relative;
+}
+
+.result-body--item.yellow::after {
+    background-color: yellow;
+}
+
+.result-body--item.green::after {
+    background-color: green;
+}
+
+.result-body--item.red::after {
+    background-color: red;
+}
+
+.result-body--item::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+}
